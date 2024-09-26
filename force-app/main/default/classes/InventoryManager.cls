@@ -14,7 +14,7 @@ public class InventoryManager {
 
     public void addItem(String itemName, Integer quantity) {
         if (itemName == null || quantity == null || quantity <= 0) {
-            return ; // Handle null or invalid inputs gracefully
+            return ; 
         }
 
         Item item = inventory.get(itemName);
@@ -28,7 +28,7 @@ public class InventoryManager {
 
     public void removeItem(String itemName, Integer quantity) {
         if (itemName == null || quantity == null || quantity <= 0) {
-            return ; // Handle null or invalid inputs gracefully
+            return ; 
         }
 
         Item item = inventory.get(itemName);
@@ -42,7 +42,7 @@ public class InventoryManager {
 
     public Integer getQuantity(String itemName) {
         if (itemName == null) {
-            return null; // Handle null input gracefully
+            return null; 
         }
 
         Item item = inventory.get(itemName);
